@@ -62,15 +62,19 @@
 
 - android activity FLAG_ACTIVITY_CLEAR_TASK 跳转出现短暂的白屏或黑屏现象
 - [解决 android 应用被强杀或应用被回收导致的空指针问题](https://juejin.cn/post/6844903450015186958)
--  [Android NDK ANR问题分析处理](https://www.jianshu.com/p/03d9fbb5268b)
--  [Android 使用shape实现虚线或者虚线框](https://blog.csdn.net/kongTy/article/details/82461972)
--   [android APP闪退后如何屏蔽自启动](https://blog.csdn.net/wllovar/article/details/107692139)  统计闪退日志
--   [Android中打开多个Activity，点击返回到第一个Activity](https://blog.csdn.net/qq_35091074/article/details/120014013)
--   [返回上一层activity的实现方式(拓展：不同activity间的任意跳转)](https://blog.csdn.net/dsa63/article/details/17010887)
--   [Android MulticastSocket 组播](https://www.jianshu.com/p/28eff2448a76)
--   [Android上UDP组播无法接收数据的问题](https://www.cnblogs.com/Ralap/p/Android_udp_multcast_solution.html)
--   [android 中获取所有有效网卡和对应的IP地址](https://blog.csdn.net/croop520/article/details/82380963)
--   [自学Android开发 Fragment的onActivityCreated()被弃用](https://blog.csdn.net/Ym_quiet/article/details/121345411)
+- [Android NDK ANR问题分析处理](https://www.jianshu.com/p/03d9fbb5268b)
+- [Android 使用shape实现虚线或者虚线框](https://blog.csdn.net/kongTy/article/details/82461972)
+- [android APP闪退后如何屏蔽自启动](https://blog.csdn.net/wllovar/article/details/107692139)  统计闪退日志
+- [Android中打开多个Activity，点击返回到第一个Activity](https://blog.csdn.net/qq_35091074/article/details/120014013)
+- [返回上一层activity的实现方式(拓展：不同activity间的任意跳转)](https://blog.csdn.net/dsa63/article/details/17010887)
+- [Android MulticastSocket 组播](https://www.jianshu.com/p/28eff2448a76)
+- [Android上UDP组播无法接收数据的问题](https://www.cnblogs.com/Ralap/p/Android_udp_multcast_solution.html)
+- [android 中获取所有有效网卡和对应的IP地址](https://blog.csdn.net/croop520/article/details/82380963)
+- [自学Android开发 Fragment的onActivityCreated()被弃用](https://blog.csdn.net/Ym_quiet/article/details/121345411)
+
+> 开发技巧
+
+- [Android开发小技巧-监听和判断应用在前台还是后台的几种方式](https://juejin.cn/post/7111516772141891620)   推荐方式三
 
 > 辅助问题
 
@@ -81,6 +85,13 @@
 -  [App点击Home键后，再次点击APP图标，APP重启回不到点击home键前的那个界面](https://blog.csdn.net/lpCrazyBoy/article/details/103928077)  
 - [（完美解决）App点击Home键后，再次点击APP图标，APP重启回不到点击home键前的那个界面](https://blog.csdn.net/qq_38363506/article/details/101608622)
 -  [Android开发遇到的坑-----App首次安装,退后台再返回前台时重新显示Splash页面](https://www.cnblogs.com/sweep/p/10468630.html)
+
+> 自定义View+手势+滚动滑动
+
+-  [Android 手势识别——单击/双击](https://www.cnblogs.com/NeilZhang/p/8149186.html) 
+-  [Android自定义View-平移缩放旋转](https://ljd1996.github.io/2021/08/11/Android%E8%87%AA%E5%AE%9A%E4%B9%89View-%E5%B9%B3%E7%A7%BB%E7%BC%A9%E6%94%BE%E6%97%8B%E8%BD%AC/)
+
+
 
 
 
@@ -99,6 +110,8 @@
 - [为什么 Activity.finish() 之后 10s 才 onDestroy ？](https://juejin.cn/post/6898588053451833351)
 - 为什么不能使用 Application Context 显示 Dialog？
 - OutOfMemoryError 可以被 try catch 吗 ？
+- [Android----onSaveInstanceState 的数据存在哪里？为什么限制了大小？](https://yishengma.github.io/2019/03/29/Android-onSaveInstanceState-%E7%9A%84%E6%95%B0%E6%8D%AE%E5%AD%98%E5%9C%A8%E5%93%AA%E9%87%8C%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E9%99%90%E5%88%B6%E4%BA%86%E5%A4%A7%E5%B0%8F%EF%BC%9F/)
+- [Android----Handler(HandlerA发送的消息HandlerB 能接收吗？)](https://yishengma.github.io/2019/01/01/Android-Handler-HandlerA%E5%8F%91%E9%80%81%E7%9A%84%E6%B6%88%E6%81%AFHandlerB-%E8%83%BD%E6%8E%A5%E6%94%B6%E5%90%97%EF%BC%9F/)
 
 
 
@@ -150,9 +163,6 @@
 
   
 
-  
-
-  
 
 #### cmake
 
@@ -166,7 +176,17 @@
 
 
 
+#### ndk闪退
 
+- [Android稳定性系列-01-使用 Address Sanitizer检测原生代码中的内存错误](https://blog.csdn.net/xiangang12202/article/details/128979055)
+- https://github.com/google/breakpad
+- [Android在Windows下无需编译Breakpad源码就能使用](https://www.jianshu.com/p/0bfe7800bdef)  精选
+- [Android Native Crash 捕获之 BreakPad](https://blog.csdn.net/yanbober/article/details/108586835)
+-  [Android性能优化(1)-使用Breakpad捕获Android Native Crash](https://juejin.cn/post/6935472686655078414)
+- [Android使用google breakpad捕获分析native cash](https://www.cnblogs.com/liqw/p/10616410.html)
+
+- https://github.com/AndroidAdvanceWithGeektime/Chapter01 集成了[Breakpad](https://github.com/google/breakpad) 来获取发生 native crash 时候的系统信息和线程堆栈信息。
+-  [崩溃日志收集框架方案选型调研](https://www.jianshu.com/p/4120639526ff)
 
 ### 音视频
 
@@ -176,6 +196,8 @@
 
 #### 基础知识
 
+
+
 -  [H.264/H265码流解析](https://www.cnblogs.com/wujianming-110117/p/12722286.html)
 - [H264/265码流数据包格式分析](H264/265码流数据包格式分析)
 - [Android MediaCodec编码后解析出H264/H265中vps sps pps帧](https://blog.csdn.net/zhichi202/article/details/105920432)
@@ -183,13 +205,26 @@
 > 每帧PCM数据大小：**PCM Buffersize=采样率\*采样时间\*采样位数/8\*通道数（Bytes）**
 
 - [关于音频帧率与采样率](https://www.suninf.net/2023/01/audio-framerate-and-sample.html)
+
 - [libfdk_aac编码AAC](https://blog.csdn.net/u010140427/article/details/127765173)
+
 - [采样个数(样本数)的概念及计算一帧音频的大小](https://blog.csdn.net/weixin_44517656/article/details/117849297)  音频通道数、采样率、采样个数(样本数)、采样位数的概念和计算一帧音频的大小、每秒播放的音频字节大小、一帧音频的播放时长
+
 - [FFmpeg 音频编码](https://octalzero.com/article/88a0d789-5f79-46d9-8706-2c5f063a5157)
+
 - [FFmpeg 解封装 MP4 媒体文件](https://octalzero.com/article/91b62969-d088-46e3-a500-b6b8a3e5278f)
 
 - [Android音视频开发基础（五）：学习MediaCodec API，完成音频AAC硬编、硬解](https://juejin.cn/post/7067478839152246820)
+
 - [android MediaCodec dequeueInputBuffer IllegalStateException](https://blog.51cto.com/u_16213403/7156563)    《经典问题，必须搞明白》
+
+- [Android原生编解码接口 MediaCodec 之——踩坑](https://cloud.tencent.com/developer/article/2147516) 
+
+  **经验之谈**：如果初始化MediaFormat视频流的预设宽高高于**当前手机支持的解码最大分辨率**那么在调用MediaCodec.configure的时候就会crash。把MediaFormat.createVideoFormat时候的宽高设置小一点就ok了，那么就会有另外一个问题，就是如果我设置`1080*720`的后，视频流来了一个`1920*1080`的会不会有影响？如果当前设备的最大分辨率高于这个值，就算预设值不一样，也还是可以正常解码并显示1920*1080的画面。那么如果低于这个值呢？**两种情况 `绿屏`／`MediaCodec.dequeueInputBuffer的值一直抛IllegalStateException`**
+
+  Android手机硬解码支持最大分辨率查看：手机路径：/system/vendor/etc/media_codecs.xml
+
+  所以Android手机必须支持软解码！
 
 
 
@@ -209,6 +244,8 @@
 > 硬解码用系统解码器，软解码用FFmpeg
 
 - [安卓硬解码性能问题](https://github.com/Bilibili/ijkplayer/issues/1954) 
+- [Android视频播放器开发-渲染YUV图像](https://kason.site/posts/android-render-yuv)  H264格式的视频，一般从视频解码器解码出来的帧图像数据都是YUV格式的，如果使用`SurfaceView`渲染，需要先转换成RGB格式再渲染，效率会很低。这时候可以借助OpenGL强大的着色器语言，在GPU完成YUV到RGB转换，实现YUV图像的高效渲染。
+- [使用FFmpeg解码并用swscale将YUV转为RGB](https://www.cnblogs.com/ichenwin/p/10772026.html)
 
 
 
@@ -373,6 +410,10 @@
 
 ### 架构方案
 
+> [Android架构之MVC、MVP、MVVM详解](https://qwerhuan.gitee.io/2020/08/16/android/android-jia-gou-zhi-mvc-mvp-mvvm-xiang-jie/)
+
+
+
 #### MVP架构
 
 > 使用 MVP 时，如何让同一个 P 服务多个 V？
@@ -392,12 +433,14 @@
 #### MVVM架构
 
 - https://github.com/jenly1314/MVVMFrame   MVVMFrame for Android 是一个基于Google官方推出的Architecture Components dependencies（现在叫JetPack）{ Lifecycle，LiveData，ViewModel，Room } 构建的快速开发框架。有了MVVMFrame的加持，从此构建一个MVVM模式的项目变得快捷简单。
+-  [Android之MVVM简单例子](https://blog.csdn.net/qq_17441227/article/details/120219584)
 
 
 
 #### MVI架构
 
 -  MVVM 进阶版：MVI 架构了解一下~  https://juejin.cn/post/7022624191723601928
+-   [Android架构学习之路三-MVX](https://ljd1996.github.io/2022/01/11/Android%E6%9E%B6%E6%9E%84%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF%E4%B8%89-MVX/)
 
 #### 传统架构
 
@@ -464,6 +507,7 @@
 - https://github.com/yetel/EasyChatAndroidClient  EasyChat是一个开源的社交类的App。主要包含消息、好友、群组等相关的IM核心功能。部分界面参照了QQ、微信等相关社交APP。EasyChat APP整体采用MVVM模式，基于JetPack(Lifecycle，LiveData，ViewModel，Room)构建
 - https://github.com/jenly1314/ASocket ASocket 是一个TCP/UDP协议的封装库，方便快速实现TCP的长连接与UDP的单播、组播、广播等相关通信
 - https://github.com/jenly1314/AWebSocket  AWebSocket一个基于okhttp封装的WebSocket，简洁易用。
+- [Android 上传文件到 FTP 服务 器  ](https://www.cnblogs.com/renhui/p/7732143.html)  
 
 #### 总线
 
@@ -497,7 +541,10 @@
 
 #### 权限
 
+#### 异常
 
+- [xCrash](https://github.com/iqiyi/xCrash/blob/master/README.zh-CN.md) xCrash 能为安卓 app 提供捕获 java 崩溃，native 崩溃和 ANR 的能力。不需要 root 权限或任何系统权限。
+- 
 
 #### 动画
 
@@ -587,6 +634,8 @@
 - https://github.com/natario1/ZoomLayout
 - https://github.com/guangmomo/ZoomLayout
 -  [android-view-实现双指平移、缩放、旋转](https://juejin.cn/post/6844904162744860685)
+-  https://github.com/tjek/zoomlayout
+-  https://github.com/yinxuming/VideoTouchScaleRotate Android视频播放画面双指旋转、缩放、平移以及回弹动效实现（二）
 
 ##### Banner
 
@@ -681,7 +730,9 @@
 
 
 
+### 版本控制
 
+- [Failed to connect to github.com port 443: Connection refused问题解决](https://zhuanlan.zhihu.com/p/642910282)
 
 
 
@@ -695,6 +746,16 @@
 
 - [BlockCanary — 轻松找出Android App界面卡顿元凶](http://blog.zhaiyifan.cn/2016/01/16/BlockCanaryTransparentPerformanceMonitor/).  [github源码](https://github.com/markzhai/AndroidPerformanceMonitor/blob/master/README_CN.md)
 - https://github.com/SalomonBrys/ANR-WatchDog
+- [ANR监控方案总结](https://www.jianshu.com/p/d08f4a3d536d) 
+- [xCrash ANR 兼容性测试](https://www.dalvik.work/2021/11/29/xcrash-anr-compatibility/#)
+- [Android ANR处理流程](https://sniffer.site/2017/06/25/android-anr%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B/#/%E8%BE%93%E5%85%A5%E6%97%A0%E5%93%8D%E5%BA%94)
+
+
+
+### 性能检测
+
+- [Android常用的性能分析工具](https://sniffer.site/2023/10/20/android常用的性能分析工具使用简介/#)
+- 
 
 ## 源码解读
 
@@ -710,3 +771,27 @@
 
 - https://github.com/OCNYang/AndroidBang  《Android 江湖花名册》
 - https://github.com/OCNYang/OCNYang/blob/master/resume.md
+
+
+
+
+
+# 技术全栈领域
+
+
+
+## 直播技术
+
+
+
+### 小程序直播
+
+
+
+> 目前系统维护，暂时不支持新开通直播权限了（已有直播权限的账号不影响），具体恢复时间暂不清楚。
+>
+> 当前如果有直播的需求可以试试视频号直播，小程序内可以跳转视频号直播间，能力文档：https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/channels-live.html
+>
+> https://developers.weixin.qq.com/community/minihome/doc/000084c0dec2e8a3d2e06b3d36b400
+
+- https://github.com/AJLoveChina/wechat-pusher-player  微信小程序live-pusher/live-player 示例, 使用本地搭建的RTMP服务
