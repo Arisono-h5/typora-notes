@@ -13,6 +13,14 @@
 - [Java 运算符（操作符）&、&&、|、||、^、＜＜](https://blog.csdn.net/dd_Mr/article/details/123969634)
 - [System.arraycopy()方法使用](https://blog.csdn.net/liuqinhou/article/details/127272556)
 
+-   [Java 枚举：switch 支持枚举](https://blog.csdn.net/veryitman/article/details/7947640)
+
+> JSON
+
+- https://blog.csdn.net/weixin_40573757/article/details/80200758 JSON.toJSONString 后都变成了小写
+
+
+
 
 
 ### kotlin
@@ -37,6 +45,7 @@
 - https://github.com/OCNYang/ConstraintLayout_Guide   全面讲解 ConstraintLayout 相关知识，目前最强大的布局控件，没有之一，不接受反驳。
 - https://github.com/OCNYang/Flutter-Notes  收集学习 Flutter 不错的教程。
 - https://blog.csdn.net/u010126792/article/details/85238050   Android 绘图学习 《系列教程》
+- https://blog.csdn.net/wangzhongshun/article/details/105321487 Android 拦截或屏蔽返回键
 
 #### 帮助手册
 
@@ -47,14 +56,20 @@
 > 经典错误：Channel is unrecoverably broken and will be disposed!
 
 - [Android报错：Channel is unrecoverably broken and will be disposed!]()
--  InputDispatcher          E  channel '90b1479 com.htl.app/com.htl.app.module.video.LiveVideoActivity (server)' ~ Channel is unrecoverably broken and will be disposed!   产生这个错误的原因很多。（内存泄漏+new对象太多+后台进程显示对话框）
--  channel '8990903 com.htl.app/com.htl.app.module.home.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
-
+- InputDispatcher          E  channel '90b1479 com.htl.app/com.htl.app.module.video.LiveVideoActivity (server)' ~ Channel is unrecoverably broken and will be disposed!   产生这个错误的原因很多。（内存泄漏+new对象太多+后台进程显示对话框）
+- channel '8990903 com.htl.app/com.htl.app.module.home.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
 - [Channel is unrecoverably broken and will be disposed!](https://blog.csdn.net/bai936780514/article/details/79804274)  部分手机不打印全错误，比如小米，换手机调试！
-
 - java_vm_ext.cc:577] JNI DETECTED ERROR IN APPLICATION: JNI SetByteArrayRegion called with pending exception java.lang.OutOfMemoryError: Failed to allocate a 11328 byte allocation with 2480 free bytes and 2296B until OOM, target footprint 268435456, growth limit 268435456
+- [Android NDK开发崩溃 signal 11 (SIGSEGV), code 1 (SEGV_MAPERR),解决方法](https://www.cnblogs.com/rocket-ban/p/14717425.html)
 
--  [Android NDK开发崩溃 signal 11 (SIGSEGV), code 1 (SEGV_MAPERR),解决方法](https://www.cnblogs.com/rocket-ban/p/14717425.html)
+> Android系统版本兼容问题报错
+
+-  [终极大法：android:exported needs to be explicitly specified for <xxxxx>. Apps targeting Android 12 and...](https://www.jianshu.com/p/0966c614e51a)   这个问题麻烦点在于，需要解决第三方库中的android exported问题。——Android12 API引发的问题。
+- [解决Manifest merger failed : android:exported needs to be explicitly specified for ＜activity＞](https://blog.csdn.net/adojayfan/article/details/123243312)  ——Android12 API引发的问题。
+-  [Android编译优化之Jetifier优化](https://blog.csdn.net/SOHU_TECH/article/details/135007860)   android有些第三库或者android老项目，Android X库与Support库混用，导致开启了 “android.enableJetifier=true”。导致编译项目速度变慢了。这个 Jetifier 插件每次编译运行，都会对构建速度产生影响。因此，关闭 Jetifier 有助于加快构建速度。
+- https://blog.csdn.net/weixin_37639900/article/details/107488172  ListView 的Adapter刷新数据时出现IndexOutOfBoundsException: Index: 4, Size: 0 数组越界异常问题的解决方案
+
+
 
 
 
@@ -71,6 +86,10 @@
 - [Android上UDP组播无法接收数据的问题](https://www.cnblogs.com/Ralap/p/Android_udp_multcast_solution.html)
 - [android 中获取所有有效网卡和对应的IP地址](https://blog.csdn.net/croop520/article/details/82380963)
 - [自学Android开发 Fragment的onActivityCreated()被弃用](https://blog.csdn.net/Ym_quiet/article/details/121345411)
+
+> 图片加载
+
+- https://blog.csdn.net/u011814346/article/details/99585014  android listview使用glide异步加载图片错位，闪烁问题
 
 > 开发技巧
 
@@ -163,8 +182,7 @@
 
   
 
-
-#### cmake
+#### Cmake编译
 
 - [cmake-examples](https://github.com/ttroy50/cmake-examples)  +[文档教程](https://sfumecjf.github.io/cmake-examples-Chinese)  CMake详细教程
 
@@ -176,7 +194,7 @@
 
 
 
-#### ndk闪退
+#### NDK闪退
 
 - [Android稳定性系列-01-使用 Address Sanitizer检测原生代码中的内存错误](https://blog.csdn.net/xiangang12202/article/details/128979055)
 - https://github.com/google/breakpad
@@ -188,9 +206,24 @@
 - https://github.com/AndroidAdvanceWithGeektime/Chapter01 集成了[Breakpad](https://github.com/google/breakpad) 来获取发生 native crash 时候的系统信息和线程堆栈信息。
 -  [崩溃日志收集框架方案选型调研](https://www.jianshu.com/p/4120639526ff)
 
+
+
+#### JNI优化
+
+
+
+[JNI中基本类型数组的传递方法（无需拷贝数据！！！）](https://blog.csdn.net/autumn20080101/article/details/8645480)
+
+
+
+
+
 ### 音视频
 
 #### 资料汇总
+
+-  [音视频开发系统学习的浪漫马车之总目录](https://juejin.cn/post/7033711226827833351/)
+- [Android OpenGL ES 学习系列教程](https://blog.csdn.net/u011418943/article/details/128421098)
 
 
 
@@ -237,7 +270,13 @@
 
 
 
-#### 视频流播放
+#### 视频编解码(直播)
+
+注意事项：
+
+1. 安卓部分低端机，硬解码支持的最大分辨率是2560x1440或者其它某个分辨率，视频流超过手机最大的分辨率之后，解码器解码的时候会报异常。无法解码，这种情况下需要走软解！故android一定要支持软解。
+1. 难点：高分辨率条件下的软解码渲染性能问题。
+1. 难点：FFmpeg软解码渲染RGB32数据，延迟0.5s的问题。
 
 > 主要是H264,H265格式的硬解码和软解码播放。特别注意高清分辨率下的，软解码播放问题。
 >
@@ -246,6 +285,25 @@
 - [安卓硬解码性能问题](https://github.com/Bilibili/ijkplayer/issues/1954) 
 - [Android视频播放器开发-渲染YUV图像](https://kason.site/posts/android-render-yuv)  H264格式的视频，一般从视频解码器解码出来的帧图像数据都是YUV格式的，如果使用`SurfaceView`渲染，需要先转换成RGB格式再渲染，效率会很低。这时候可以借助OpenGL强大的着色器语言，在GPU完成YUV到RGB转换，实现YUV图像的高效渲染。
 - [使用FFmpeg解码并用swscale将YUV转为RGB](https://www.cnblogs.com/ichenwin/p/10772026.html)
+
+> Android  视频软解码方案
+>
+> 解决硬解码无法解决的机型问题。无法播放超过手机自身分辨率的视频流。
+
+1.  FFmpeg 解码H264 /H265 帧数据为YUV420     然后借助  libyuv 把YUV420转换为RGB格式。这样就能渲染了。
+2.  FFmpeg 解码H264/ H265 帧数据为YUV420     然后借助  FFmpeg自带的swscale模块 把YUV420转换为RGB格式。这样就能通过渲染了。（技术打通，但是软解存在延迟0.5秒的问题）遗留问题。
+
+-  [Android通过ffmpeg解码视频](https://www.jianshu.com/p/5c4608a72187)
+-  [详解 YUV 格式（I420/YUV420/NV12/NV12/YUV422）](https://paaatrick.com/2020-01-26-yuv-pixel-formats/)
+-  [YUV各种格式的详解](https://blog.csdn.net/weixin_44517656/article/details/117526561)
+-  [图解YU12、I420、YV12、NV12、NV21、YUV420P、YUV420SP、YUV422P、YUV444P的区别.md](https://github.com/byhook/ffmpeg4android/blob/master/readme/%E5%9B%BE%E8%A7%A3YU12%E3%80%81I420%E3%80%81YV12%E3%80%81NV12%E3%80%81NV21%E3%80%81YUV420P%E3%80%81YUV420SP%E3%80%81YUV422P%E3%80%81YUV444P%E7%9A%84%E5%8C%BA%E5%88%AB.md)
+-  [AVFrame 与 yuv420那些事](https://blog.csdn.net/lanxiaziyi/article/details/74139729)
+-  [FFmpeg中AVFrame YUV420P格式分析](https://rumenz.com/rumenbiji/ffmpeg-avframe-yuv420p.html)
+-   [Android MediaCodec硬解码、ffmpeg软解码，兼顾机型一致性和性能](https://juejin.cn/post/6997637274850721822)
+-   [AVFrame的数据填充方式 ](https://www.cnblogs.com/lidabo/p/15843868.html)
+-    [FFmpeg RGB转YUV ](https://www.cnblogs.com/linuxAndMcu/p/12127975.html)
+-   [new、delete、指向连续空间的指针、数组、空间释放、空间申请[C++\][内存管理]](https://www.cnblogs.com/neworiginou/archive/2012/02/20/2359165.html)
+-    [FFmpeg的H264解码实战](https://juejin.cn/post/7022653742029733925#heading-5)
 
 
 
@@ -378,11 +436,44 @@
 
 - [AAC 音频编码格式分析](https://octalzero.com/article/ae661974-5f1a-4352-9ae6-38022679a90d)
 
+-  [将AVFrame转换为指定格式的AVFrame](https://avmedia.0voice.com/?id=46772)
+
+- [ffmpeg从AVFrame取出yuv数据到保存到char*中](https://blog.csdn.net/weixin_34252090/article/details/94602122)
+
+
 
 
 ### 自定义View
 
 #### 案例
+
+> 基础库封装
+
+- https://github.com/kongpf8848/ViewWorld  About自定义View合集，展示各种自定义View/控件。项目包含了自定义Banner轮播图控件，自定义验证码输入框，自定义TabLayout等控件，持续更新中
+
+- https://github.com/xinghongfei/awesome-view 自定义View有这些足够了
+
+- https://github.com/AbrahamCaiJin/CommonUILibrary
+
+- https://github.com/HpWens/MeiWidgetView
+
+- https://github.com/JaynmBo/StockDemo  Android 自定义View——实现股票自选列表滑动效果
+
+  
+
+
+
+> 矩形框(矩形框伸缩,矩形框标注)
+
+- https://juejin.cn/post/7239881176679989307  Android自定义控件之算法标注框（图片上标注）
+- https://blog.csdn.net/zz51233273/article/details/107629079   Android 自定义View实现可拖动边框缩放的矩形
+- https://github.com/YinCanSheng/JaneB_CustomZoomBox  自定义可移动伸缩的矩形框
+- https://github.com/wzgl5533/CropView 绘制裁剪框（设置圆形，椭圆和矩形）
+- https://blog.csdn.net/Coo123_/article/details/90755157  Android自定义View之区块选择器
+
+
+
+> 其它自定义案例
 
 - https://github.com/385841539/HorizontalScrollSelectedView   横向滚动的，可以支持大量文本选择的 自定义View ，一行代码 ， 简单易用 ， 无OOM情况
 - https://github.com/AnliaLee/BookPage Android自定义View实现翻页效果，并附带实现教程
@@ -390,17 +481,49 @@
 - https://github.com/chezi008/VideoSurveillance 视频监控，四宫格视图。双击放大，视频无缝衔接
 - https://blog.csdn.net/yan13507001470/article/details/116530740 自定义viewGroup，动态增/删子view，及四/九宫格排版
 - https://www.jb51.net/article/269729.htm Android自定义ViewGroup实现九宫格布局
+- https://juejin.cn/post/6844903871777619981?from=search-suggest  Android 自定义View：实现一个 FM 刻度尺
+- https://github.com/zfman/TimetableView 一款开源、完善、高效的Android课程表控件，支持添加广告、课程重叠自动处理、透明背景设置、空白格子点击事件处理等丰富的功能，并且有完善的开发文档、案例以供参考
+- https://github.com/luojie1024/WeiFur 超级课程表 课程格子 教务系统抓取 SQLite Android Studio HttpWatch Jsoup解析网页
+- https://github.com/huangyanbin/smartTable 一款android自动生成表格框架---An Android automatically generated table framework
+- https://github.com/faith-hb/WidgetCase 自定义控件模块库：各种风格的自定义控件，拿来就用，API文档详细，持续集成，长期维护，有问必答；
 
 #### 教程
+
+> 基础
+
+ https://blog.csdn.net/xjz729827161/article/details/82315577 android View移动的四种方式
+
+https://www.jianshu.com/p/6228d3a12da1 Canvas绘图PorterDuffXfermode使用
+
+https://juejin.cn/post/6844903446240296973  Android PorterDuffXferMode 防坑指南
+
+https://www.jianshu.com/p/2a967143f894 Android 图层混合模式PorterDuff.Mode
+
+> 自定义View教程
+
+1. https://blog.csdn.net/chaseDreamer_/article/details/97262581 Android 获取View的位置参数：x,y和相对父容器的偏移量以及中心点坐标
+2. https://blog.csdn.net/qq_31339141/article/details/90109123  Android自定义View系列：事件拦截机制（触摸反馈机制）
+3. https://blog.csdn.net/AND_YOU_with_ME/article/details/78646220 Android 手势检测---GestureDetector
+4. https://www.gcssloop.com/customview/gestruedector.html 安卓自定义View进阶-手势检测(GestureDetector)
+5. https://www.gcssloop.com/customview/scalegesturedetector.html  安卓自定义View进阶-缩放手势检测(ScaleGestureDecetor)
+6. https://blog.csdn.net/hty1053240123/article/details/77866302 Android中onInterceptTouchEvent、dispatchTouchEvent及onTouchEvent的调用顺序及内部原理
+7. Android自定义view触摸判断长按 事件 
+8. https://blog.csdn.net/guolin_blog/article/details/48719871   Android Scroller完全解析，关于Scroller你所需知道的一切
+9. https://blog.csdn.net/Coo123_/article/details/90755157  Android自定义View之区块选择器
 
 > 刘望舒自定义View系列
 
 -  [Android View体系（一）视图坐标系](https://blog.csdn.net/itachi85/article/details/50708391)   [个人博客](https://liuwangshu.cn/application/view/1-coordinate-system.html)
 -  https://blog.csdn.net/u010126792/article/details/85238050   Android 绘图学习
+-  https://www.gcssloop.com/customview/CoordinateSystem.html  安卓自定义View基础-坐标系
 
 > 开源系列
 
 -  https://github.com/xinghongfei/awesome-view
+
+
+
+
 
 
 
@@ -458,16 +581,29 @@
 
 #### 组件化架构
 
-- Java+RxJava+Okhttp+Retrofit+MVP+组件化
-- kotlin+RxJava+Okhttp+Retrofit+MVP+组件化
+> Java+RxJava+Okhttp+Retrofit+MVP+组件化
+>
+> kotlin+RxJava+Okhttp+Retrofit+MVP+组件化
+
+组件化架构是必须掌握的一种架构方式，必须掌握！
+
+
+
+- [CyxbsMobile_Android](https://github.com/RedrockMobile/CyxbsMobile_Android?tab=readme-ov-file) 掌邮APP多模块组件化架构
+
+
 
 #### 跨平台架构
 
 
 
+- https://github.com/persilee/android_ctrip  Android Flutter 混合开发高仿大厂App
 
 
 
+#### 多渠道架构
+
+ [android多渠道 依赖,android 不同渠道 添加不同依赖jar 使用不同代码](https://huaweicloud.csdn.net/64f988bb4cd6367bad133106.html?dp_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NTE3MjIwNywiZXhwIjoxNzExMzY2OTE1LCJpYXQiOjE3MTA3NjIxMTUsInVzZXJuYW1lIjoidnBzc2YifQ.i8wnNbXEpi1_K_nqwVUHjGNttndmvy5PicFAWpzBrsg)
 
 ### 基础组件
 
@@ -508,6 +644,11 @@
 - https://github.com/jenly1314/ASocket ASocket 是一个TCP/UDP协议的封装库，方便快速实现TCP的长连接与UDP的单播、组播、广播等相关通信
 - https://github.com/jenly1314/AWebSocket  AWebSocket一个基于okhttp封装的WebSocket，简洁易用。
 - [Android 上传文件到 FTP 服务 器  ](https://www.cnblogs.com/renhui/p/7732143.html)  
+- [retrofit 请求,BaseURL部分缺失，踩坑](https://blog.csdn.net/csdnzzu/article/details/78538596)
+
+> 网络状态变化监听
+
+- https://juejin.cn/post/7011004836590288933 Android进阶之路 - 实时监听网络状态
 
 #### 总线
 
@@ -539,6 +680,48 @@
 
 #### 存储
 
+> 这里包含了Sqlite数据库存储，SD文件的操作。SP存储等
+
+ [Android数据库框架该如何选？](https://juejin.cn/post/7020223144082276383)
+
+##### Room(推荐)
+
+> Sqlite ORM框架：ROOM(Google 官方)   也是目前Android主流的数据库ORM框架。
+>
+> 优势：缩减代码，节省时间和精力。**减少对 SQL 的直接操作，更加类型安全的读写数据库**。
+
+处理大量结构化数据的应用可极大地受益于在本地保留这些数据。最常见的使用场景是缓存相关的数据，这样一来，当设备无法访问网络时，用户仍然可以在离线状态下浏览该内容。
+
+Room 持久性库在 SQLite 上提供了一个抽象层，以便在充分利用 SQLite 的强大功能的同时，能够流畅地访问数据库。具体来说，Room 具有以下优势：
+
+- 提供针对 SQL 查询的编译时验证。
+- 提供方便注解，可最大限度减少重复和容易出错的样板代码。
+- 简化了数据库迁移路径。
+
+出于这些方面的考虑，我们强烈建议您使用 Room，而不是[直接使用 SQLite API](https://developer.android.com/training/data-storage/sqlite?hl=zh-cn)。
+
+[Room版本更新历史官网查询](https://developer.android.com/jetpack/androidx/releases/room)
+
+[Room开发指南官网](https://developer.android.com/training/data-storage/room?hl=zh-cn)
+
+[Room 数据库升级技术：Schema、单个数据库版本升级和多个版本跨越升级)](https://blog.csdn.net/qq_24252589/article/details/131187588)
+
+[Android——Jetpack之Room学习（java实现 附demo）](https://blog.csdn.net/The_onion/article/details/128066517)
+
+[Android room条件查询 android room基本开发用法](https://blog.51cto.com/u_16099328/6988222)
+
+ [将Room的使用方式塞到脑子里](https://juejin.cn/post/6992875656707211271#heading-23)
+
+ [Room数据库 -- TypeConverter简单理解](https://juejin.cn/post/7006898548411203620)
+
+ [Room-数据持久化存储(进阶)](https://www.cnblogs.com/mymy-android/p/14943884.html)
+
+ [android room自动升级数据库](https://www.jianshu.com/p/7ce5b2c3c301)
+
+[Android Room 数据库升级](https://juejin.cn/post/7295576148364328999)
+
+
+
 #### 权限
 
 #### 异常
@@ -551,6 +734,23 @@
 - https://github.com/kongpf8848/Animation  Android各种动画效果合集，项目包含了丰富的动画实例(逐帧动画，补间动画，Lottie动画，GIF动画，SVGA动画)，体验动画之美，让Android动起来
 - https://github.com/REBOOTERS/AndroidAnimationExercise  Android 动画各种实现，包括帧动画、补间动画和属性动画的总结分享
 - https://github.com/OCNYang/Android-Animation-Set  Android 所有动画系列详尽教程。 Explain all animations in Android.
+
+
+
+#### 多语言
+
+- https://github.com/getActivity/MultiLanguages  Android 多语种适配框架，兼容高版本，适配第三方库语种
+
+
+#### Fragment
+
+- [Fragment 可见性监听方案](https://www.jianshu.com/p/75efeede8a95)
+
+- [Fragment可见性及懒加载终极解决方案](https://www.jianshu.com/p/de332ecdd14d) 
+
+- [Fragment 可见性监听方案 - 完美兼容多种 case](https://cloud.tencent.com/developer/article/1937901)
+
+
 
 
 
@@ -577,7 +777,27 @@
 
 - https://github.com/jenly1314/AppPay  AppPay专注于App支付的库，几句代码轻松搞定微信支付、支付宝支付、银联支付。集成更简单。
 
+#### 下载
+
+https://www.jianshu.com/p/3b269082cbbb  使用 Okhttp 下载文件和更新进度条
+
+
+
+
+
+
+
 ### UI组件
+
+
+
+#### 公共组件
+
+> 样式
+
+ https://github.com/getActivity/ShapeView  Shape 支持在布局中直接定义啦，支持设置阴影，文字渐变色，状态选择器
+
+
 
 
 
@@ -591,6 +811,10 @@
 
 -  [Fragment的生命周期以及onActivityCreated()被弃用](https://blog.csdn.net/Ym_quiet/article/details/121345411)
 
+> 嵌套滚动
+
+- https://github.com/donkingliang/ConsecutiveScroller  ConsecutiveScrollerLayout是Android下支持多个滑动布局(RecyclerView、WebView、ScrollView等)和普通控件(TextView、ImageView、LinearLayou、自定义View等)持续连贯滑动的容器,它使所有的子View像一个整体一样连续顺畅滑动。并且支持布局吸顶功能。
+
 
 
 #### 列表
@@ -598,6 +822,8 @@
 > 基础列表
 
 - [GirdView网格列表的使用](https://www.jianshu.com/p/68bf875214d6)
+
+- https://github.com/jdsjlzx/LRecyclerView RecyclerView下拉刷新，自动加载更多；仿IOS侧滑Item删除菜单（盼望大家扩展更多功能）
 
   
 
@@ -637,6 +863,42 @@
 -  https://github.com/tjek/zoomlayout
 -  https://github.com/yinxuming/VideoTouchScaleRotate Android视频播放画面双指旋转、缩放、平移以及回弹动效实现（二）
 
+
+
+##### TimeRuler
+
+> 复杂的自定义View
+
+https://blog.csdn.net/Coo123_/article/details/90755157  Android自定义View之区块选择器
+
+https://github.com/zjun615/RulerView 卷尺系列控件，包含：普通卷尺（如：体重）、金额尺、时间尺
+
+https://github.com/dingyongxiang/TimeRulers  一个视频时间轴 仿萤石云录像时间轴
+
+https://github.com/wangliu1994/VideoTimeRuler 视频播放进度 时间尺
+
+https://github.com/huangdali/TimeRuler  时间轴、时间刻度尺   参考教程：android自定义view，时间刻度尺，时间轴，视频轴 https://blog.csdn.net/qq137722697/article/details/78118306
+
+https://github.com/huangdali/RulerView  时间轴、时间刻度尺
+
+ https://github.com/qianquanQutman/TimeRuler   仿萤石云视频时间轴, 时间选择  ios
+
+https://github.com/Liberations/TimeRuler   可以缩放平移的时间刻度尺，方便自定义UI需求。仿萤石云历史录像时间轴
+
+https://juejin.cn/post/6844903437843300366  可缩放时间轴和录像片段选择器的实现
+
+https://github.com/qiangzhouliang/QATimeRule   时间刻度尺插件封装
+
+https://github.com/chan106/JCTimeLineView   仿萤石时间轴控件
+
+https://gitee.com/wzy901213145499/Tunlview  一个完美的视频播放条控件（刻度尺），可以将控件与时间对应起来，也可以对控件进行移动和缩放,把时间戳和位置对应起来
+
+https://github.com/ljfxyj2008/ScalableTimebar ----->参考教程：可缩放时间轴和录像片段选择器的实现 https://ljfxyj2008.github.io/2015/12/09/%E5%8F%AF%E7%BC%A9%E6%94%BE%E6%97%B6%E9%97%B4%E8%BD%B4%E5%92%8C%E5%BD%95%E5%83%8F%E7%89%87%E6%AE%B5%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%E5%AE%9E%E7%8E%B0.html#
+
+
+
+
+
 ##### Banner
 
 
@@ -663,10 +925,17 @@
 #### 进度条
 
 - https://github.com/Ccapton/Collection-Android-Progress 进度条大全 安卓自定义Progressbar控件汇总
+- https://github.com/lyx0206331/CircleProgressBar  简单环形进度条实现，带进度显示，可设置居中图片，可显示进度值，可选择进度样式，可选择动画效果，也可当按下时带进度的按钮使用
+- https://github.com/glassLake/SmoothRoundProgressbar/tree/master  圆环进度条，首尾交接处圆润,自带动画，可自定义渐变，环厚度，转动速度
+- https://github.com/zhongruiAndroid/Ring 圆环进度条,环形进度条
 
 
 
 #### 对话框
+
+- https://github.com/kongzue/DialogX?tab=readme-ov-file  DialogX对话框组件库，更加方便易用，可自定义程度更高，扩展性更强，轻松实现各种对话框、菜单和提示效果，更有Material You、iOS、MIUI等主题扩展可选
+
+
 
 #### Toast
 
@@ -704,9 +973,29 @@
 
 
 
+#### SeekBar
+
+- https://github.com/woxingxiao/BubbleSeekBar  A beautiful Android custom seekbar, which has a bubble view with progress appearing upon when seeking. 自定义SeekBar，进度变化更以可视化气泡样式呈现
 
 
 
+#### 裁剪
+
+> 区域选择，区域裁剪，区域拖拉
+
+- https://github.com/igreenwood/SimpleCropView  A simple image cropping library for Android.
+-   https://github.com/jdamcd/android-crop
+-  https://github.com/Yalantis/uCrop
+-  https://github.com/ArthurHub/Android-Image-Cropper
+-  https://github.com/CanHub/Android-Image-Cropper
+-  https://github.com/steelkiwi/cropiwa
+- https://github.com/lyrebirdstudio/Croppy
+
+- [CropImageView android上的一个图片裁剪控件](https://blog.csdn.net/aaa111/article/details/75212872)
+
+- https://github.com/minminaya/CropViewDemo 裁剪旋转的自定义View（Custom View Of Crop and Rotate）
+
+-  https://blog.csdn.net/qq_42545144/article/details/119536339  Andriod 自定义view可拉伸缩放移动矩形框（详解）
 
 #### 其它
 
@@ -714,6 +1003,8 @@
 - https://github.com/EHENJOOM/ShadowCardView  自定义阴影颜色的CardView
 - https://github.com/donkingliang/RadarView  Android雷达效果自定义View.  Android自定义View 雷达扫描效果。可以根据自己的需求配置View的主题颜色、扫描颜色、扫描速度、圆圈数量、是否显示水滴等。
 - https://blog.csdn.net/weixin_39541600/article/details/117588057  android 雷达坐标系,自定义view之雷达搜索扩散圆从无到有
+- https://github.com/ly-sun/CircleTimePicker  这是一款仿IOS10(就寝功能)的圆盘时间选择器
+- https://github.com/gzu-liyujiang/AndroidPicker  安卓选择器类库，包括日期及时间选择器（可用于出生日期、营业时间等）、单项选择器（可用于性别、民族、职业、学历、星座等）、二三级联动选择器（可用于车牌号、基金定投日期等）、城市地址选择器（分省级、地市级及区县级）、数字选择器（可用于年龄、身高、体重、温度等）、日历选日期择器（可用于酒店及机票预定日期）、颜色选择器、文件及目录选择器、图片选择器等
 
 
 
@@ -724,15 +1015,67 @@
 
 ### 项目环境
 
+#### android studio
 
+[解决Android logcat: Unexpected EOF!方法指南](https://huaweicloud.csdn.net/65095fed993dd34278ee3e50.html?dp_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjE4MjExLCJleHAiOjE2OTYzMTgwOTksImlhdCI6MTY5NTcxMzI5OSwidXNlcm5hbWUiOiJxaW5nZmVuZzgxMiJ9.9DJl_9A1KKflSE3nwuQZTDyqZLfYUp0gMf6-c9muRec)
 
--  [解决Android logcat: Unexpected EOF!方法指南](https://huaweicloud.csdn.net/65095fed993dd34278ee3e50.html?dp_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjE4MjExLCJleHAiOjE2OTYzMTgwOTksImlhdCI6MTY5NTcxMzI5OSwidXNlcm5hbWUiOiJxaW5nZmVuZzgxMiJ9.9DJl_9A1KKflSE3nwuQZTDyqZLfYUp0gMf6-c9muRec)
+[android studio中文乱码各种情况的解决办法](https://cloud.tencent.com/developer/article/1931701)
 
+[新版Android Studio火烈鸟 在新建项目工程时 无法选java的语言模板解决方法](https://blog.csdn.net/Life_s/article/details/131044320)
 
+[Android BuildConfig不生成的解决办法](https://blog.csdn.net/yuzhiqiang_1993/article/details/130431271)
+
+#### gradle
+
+- [GradleX](https://github.com/yechaoa/GradleX)  一份关于Gradle的学习路线
+
+- [掘金专栏一览](https://juejin.cn/column/7123935861976072199)
+- [【Gradle-1】入门Gradle，前置必读](https://juejin.cn/post/7155109977579847710)
+- [【Gradle-2】一文搞懂Gradle配置](https://juejin.cn/post/7160337743552675847)
+- [【Gradle-3】Gradle中的DSL，Groovy & Kotlin](https://juejin.cn/post/7166638852503765006)
+- [【Gradle-4】Gradle的生命周期](https://juejin.cn/post/7170684769083555877)
+- [【Gradle-5】Gradle常用命令与参数](https://juejin.cn/post/7171493698243395597)
+- [【Gradle-6】一文搞懂Gradle的依赖管理和版本决议](https://juejin.cn/post/7215579793261117501)
+- [【Gradle-7】Gradle构建核心之Task指南](https://juejin.cn/post/7248207744087277605)
+- [【Gradle-8】Gradle插件开发指南](https://juejin.cn/post/7267091810380136508)
+- [【Gradle-9】Gradle插件发布指南](https://juejin.cn/post/7280062870669246525)
+- [【Gradle-10】不可忽视的构建分析](https://juejin.cn/post/7282150745164005432)
+- [【Gradle-11】动态修改VersionName和VersionCode](https://juejin.cn/post/7282691800858705957)
+- [【Gradle-12】分析so文件和依赖的关系](https://juejin.cn/post/7287429638019448888)
+- [【Gradle-13】SNAPSHOT版本检查](https://juejin.cn/post/7292416512333840438)
+- [【Gradle-14】编译优化之Gradle最佳配置实践](https://juejin.cn/post/7344625554529730600)
 
 ### 版本控制
 
+
+
+#### git
+
 - [Failed to connect to github.com port 443: Connection refused问题解决](https://zhuanlan.zhihu.com/p/642910282)
+
+#### svn
+
+ [SVN设置忽略文件和文件夹](https://blog.csdn.net/qq_31772441/article/details/100930840)
+
+ [TortoiseSVN 安装、使用教程](https://blog.csdn.net/ZYS10000/article/details/106543931)
+
+ [解决SVN文件不显示绿色小钩图标问题](https://www.cnblogs.com/ftx3q/p/15340096.html)
+
+ [‘D:\Program‘ 不是内部或外部命令，也不是可运行的程序 idea配置svn路径空格问题](https://blog.csdn.net/chedanquestion/article/details/119103761)
+
+![image-20240307144318350](https://cdn.jsdelivr.net/gh/Arisono-h5/technical-resources-static@dev/imgs/202403071443463.png)
+
+
+
+### 开发工具类
+
+
+
+#### 上传下载
+
+https://www.jianshu.com/p/205566de2adb 封装一个 OkHttp 的下载工具类
+
+https://github.com/kongzue/BaseOkHttpV3?tab=readme-ov-file#%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD OkHttp的二次封装库，提供各种快速使用方法以及更为方便的扩展功能。提供更高效的Json请求和解析工具以及文件上传下载封装，HTTPS和Cookie操作也更得心应手。
 
 
 
@@ -774,9 +1117,23 @@
 
 
 
+## 笔试面试
+
+- https://github.com/Shouheng88/Android-notes/tree/master    **[Android-notes](https://github.com/Shouheng88/Android-notes)**
+
 
 
 # 技术全栈领域
+
+## 底层技术
+
+
+
+### 通信协议
+
+服务器开发通信协议设计介绍：https://github.com/balloonwj/CppGuide/blob/master/articles/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E5%8F%91%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE%E8%AE%BE%E8%AE%A1%E4%BB%8B%E7%BB%8D.md
+
+https://github.com/Naixes/notes/blob/master/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE.md  网络协议
 
 
 
