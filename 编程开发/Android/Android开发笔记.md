@@ -25,6 +25,11 @@
 
 ### kotlin
 
+#### 语法
+
+#### 混合开发
+
+-   [kotlin和java混合开发总结](https://www.jianshu.com/p/9220227cdfb3)
 
 
 ### C/C++
@@ -116,11 +121,20 @@
 
 #### 知识笔记
 
+> 版本适配
 
+- https://github.com/getActivity/AndroidVersionAdapter 安卓版本适配全套指南
 
 >  分区存储
 
 - [Android存储之分区存储适配](https://blog.csdn.net/unreliable_narrator/article/details/127250034)
+
+> FileProvider
+
+- [Android FileProvider的使用](https://github.com/YoungBear/FileProviderLearn)
+- [Android FileProvider 踩坑指北](https://www.cnblogs.com/ioriwellings/p/16198700.html)
+
+
 
 
 
@@ -134,7 +148,39 @@
 
 
 
+
+
+
+
 ##  高级进阶
+
+### 高频热点
+
+#### 事件分发机制
+
+​            [事件分发机制完整类图+流程图](https://www.processon.com/view/62bc3a77e0b34d075b156c94)
+
+​            [Android | 彻底理解 View 的事件分发机制](https://juejin.cn/post/7067698735874539527)
+
+​            [Android事件分发机制](https://gityuan.com/2015/09/19/android-touch/)
+
+#### 消息处理机制
+
+
+
+#### View绘制流程与原理
+
+
+
+#### 自定义控件流程
+
+​          [Android自定义控件进阶01-自定义控件开发套路与流程](https://github.com/733gh/HarmonyOS-Notes/blob/master/android/Android%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A7%E4%BB%B6%E8%BF%9B%E9%98%B6%E7%B3%BB%E5%88%97/Android%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A7%E4%BB%B6%E8%BF%9B%E9%98%B601-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A7%E4%BB%B6%E5%BC%80%E5%8F%91%E5%A5%97%E8%B7%AF%E4%B8%8E%E6%B5%81%E7%A8%8B.md)
+
+
+
+
+
+
 
 
 
@@ -491,13 +537,14 @@
 
 > 基础
 
- https://blog.csdn.net/xjz729827161/article/details/82315577 android View移动的四种方式
+-  https://blog.csdn.net/xjz729827161/article/details/82315577 android View移动的四种方式
 
-https://www.jianshu.com/p/6228d3a12da1 Canvas绘图PorterDuffXfermode使用
+- https://www.jianshu.com/p/6228d3a12da1 Canvas绘图PorterDuffXfermode使用
 
-https://juejin.cn/post/6844903446240296973  Android PorterDuffXferMode 防坑指南
+- https://juejin.cn/post/6844903446240296973  Android PorterDuffXferMode 防坑指南
 
-https://www.jianshu.com/p/2a967143f894 Android 图层混合模式PorterDuff.Mode
+- https://www.jianshu.com/p/2a967143f894 Android 图层混合模式PorterDuff.Mode
+-  https://github.com/733gh/HarmonyOS-Notes/tree/master/android/Android%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A7%E4%BB%B6%E8%BF%9B%E9%98%B6%E7%B3%BB%E5%88%97  Android自定义控件进阶系列
 
 > 自定义View教程
 
@@ -790,6 +837,12 @@ https://www.jianshu.com/p/3b269082cbbb  使用 Okhttp 下载文件和更新进�
 ### UI组件
 
 
+
+#### 开源收藏
+
+- https://github.com/zincPower/UI2018      用于结合“江澎涌”公众号分享 Android 高级 UI 知识点，形成知识体系
+
+ 
 
 #### 公共组件
 
@@ -1120,8 +1173,13 @@ https://github.com/kongzue/BaseOkHttpV3?tab=readme-ov-file#%E6%96%87%E4%BB%B6%E4
 ## 笔试面试
 
 - https://github.com/Shouheng88/Android-notes/tree/master    **[Android-notes](https://github.com/Shouheng88/Android-notes)**
+- https://github.com/Timdk857/Android-Architecture-knowledge-2-
+- https://github.com/BlackZhangJX/Android-Notes   Android开发核心知识点笔记（不断更新中🔥）
+-  https://github.com/AweiLoveAndroid/CommonDevKnowledge  ![:octocat:](https://github.githubassets.com/images/icons/emoji/octocat.png)🔥 🌟⭐⭐⭐ ⭐ 史上最全的BAT大厂Android面试题汇集，以及常用的Android开发的一些技能点，冷门知识点汇总，开发中遇到的坑汇总等干货。
+-  https://github.com/pengxurui/AndroidFamily   🔥【Android 面经 + Android 学习指南】一份帮助 Android 开发者知识积累与能力进阶的学习路线
+-  https://www.kancloud.cn/alex_wsc/android/1492055
 
-
+ 
 
 # 技术全栈领域
 
