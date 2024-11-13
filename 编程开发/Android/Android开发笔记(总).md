@@ -1,4 +1,4 @@
-#  Android开发笔记
+#  Android开发笔记(总)
 
 
 
@@ -25,7 +25,29 @@
 
 ### kotlin
 
-#### 语法
+#### 基本语法
+
+-  Kotlin语言基础 https://github.com/JackChan1999/Kotlin-Tutorials/tree/master/Kotlin%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80
+
+- kotlin面向对象：https://github.com/JackChan1999/Kotlin-Tutorials/tree/master/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1
+- Kotlin函数：https://github.com/JackChan1999/Kotlin-Tutorials/tree/master/%E5%87%BD%E6%95%B0
+- Kotlin集合框架：https://github.com/JackChan1999/Kotlin-Tutorials/tree/master/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6
+
+#### 高级语法
+
+- [函数式编程](https://github.com/JackChan1999/Kotlin-Tutorials/blob/master/函数式编程/函数式编程概述.md)  https://github.com/JackChan1999/Kotlin-Tutorials/tree/master/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B
+
+-  深入理解Kotlin泛型: https://www.geekailab.com/doc/as/book/docs/Part1/Android%E5%BC%80%E5%8F%91%E5%BF%85%E5%A4%87Kotlin%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Kotlin%E6%B3%9B%E5%9E%8B.html
+- 泛型：in、out、where https://book.kotlincn.net/text/generics.html
+- 协程：https://github.com/JackChan1999/Kotlin-Tutorials/tree/master/%E5%8D%8F%E7%A8%8B
+
+#### 设计模式
+
+-   Java 和 Kotlin 单例模式写法对比  https://blog.csdn.net/fesdgasdgasdg/article/details/139886966
+
+#### 架构模式
+
+
 
 #### 混合开发
 
@@ -166,7 +188,7 @@
 
 #### 消息处理机制
 
-
+​            **[精选原创]Android系统Handler详解** https://blog.csdn.net/allen_xu_2012_new/article/details/131146087?spm=1001.2014.3001.5502
 
 #### View绘制流程与原理
 
@@ -174,11 +196,15 @@
 
 #### 自定义控件流程
 
-​          [Android自定义控件进阶01-自定义控件开发套路与流程](https://github.com/733gh/HarmonyOS-Notes/blob/master/android/Android%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A7%E4%BB%B6%E8%BF%9B%E9%98%B6%E7%B3%BB%E5%88%97/Android%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A7%E4%BB%B6%E8%BF%9B%E9%98%B601-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A7%E4%BB%B6%E5%BC%80%E5%8F%91%E5%A5%97%E8%B7%AF%E4%B8%8E%E6%B5%81%E7%A8%8B.md)
+​           [Android自定义控件进阶01-自定义控件开发套路与流程](https://github.com/733gh/HarmonyOS-Notes/blob/master/android/Android%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A7%E4%BB%B6%E8%BF%9B%E9%98%B6%E7%B3%BB%E5%88%97/Android%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A7%E4%BB%B6%E8%BF%9B%E9%98%B601-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A7%E4%BB%B6%E5%BC%80%E5%8F%91%E5%A5%97%E8%B7%AF%E4%B8%8E%E6%B5%81%E7%A8%8B.md)
 
 
 
+#### Activity启动流程
 
+​         **[精选原创]Android Activity启动过程详解**  https://blog.csdn.net/allen_xu_2012_new/article/details/131167564  
+
+​        android framework层源码解析 https://github.com/yipianfengye/androidSource/tree/master
 
 
 
@@ -274,8 +300,6 @@
 
 
 #### 基础知识
-
-
 
 -  [H.264/H265码流解析](https://www.cnblogs.com/wujianming-110117/p/12722286.html)
 - [H264/265码流数据包格式分析](H264/265码流数据包格式分析)
@@ -499,6 +523,8 @@
 
 - https://github.com/xinghongfei/awesome-view 自定义View有这些足够了
 
+- https://github.com/Tim9Liu9/TimLiu-Android 自己总结的Android开源项目及库
+
 - https://github.com/AbrahamCaiJin/CommonUILibrary
 
 - https://github.com/HpWens/MeiWidgetView
@@ -532,6 +558,15 @@
 - https://github.com/luojie1024/WeiFur 超级课程表 课程格子 教务系统抓取 SQLite Android Studio HttpWatch Jsoup解析网页
 - https://github.com/huangyanbin/smartTable 一款android自动生成表格框架---An Android automatically generated table framework
 - https://github.com/faith-hb/WidgetCase 自定义控件模块库：各种风格的自定义控件，拿来就用，API文档详细，持续集成，长期维护，有问必答；
+
+  
+
+> 视频剪辑
+
+-  Android音视频剪辑器自定义View实战！https://juejin.cn/post/7236635197071802424
+-  https://github.com/aserbao/AndroidCamera  自定义Android相机(仿抖音 TikTok)，其中功能包括视频人脸识别贴纸，美颜，分段录制，视频裁剪，视频帧处理，获取视频关键帧，视频旋转，添加滤镜，添加水印，合成Gif到视频，文字转视频，图片转视频，音视频合成，音频变声处理，SoundTouch，Fmod音频处理。
+
+
 
 #### 教程
 
@@ -582,6 +617,8 @@
 
 > [Android架构之MVC、MVP、MVVM详解](https://qwerhuan.gitee.io/2020/08/16/android/android-jia-gou-zhi-mvc-mvp-mvvm-xiang-jie/)
 
+ 关于MVC/MVP/MVVM的一些错误认识  https://juejin.cn/post/6844903938873901064
+
 
 
 #### MVP架构
@@ -601,6 +638,8 @@
 
 
 #### MVVM架构
+
+-  Jetpack Compose 架构比较：MVP & MVVM & MVI  https://blog.csdn.net/vitaviva/article/details/117433393
 
 - https://github.com/jenly1314/MVVMFrame   MVVMFrame for Android 是一个基于Google官方推出的Architecture Components dependencies（现在叫JetPack）{ Lifecycle，LiveData，ViewModel，Room } 构建的快速开发框架。有了MVVMFrame的加持，从此构建一个MVVM模式的项目变得快捷简单。
 -  [Android之MVVM简单例子](https://blog.csdn.net/qq_17441227/article/details/120219584)
@@ -650,7 +689,17 @@
 
 #### 多渠道架构
 
+> 非常实用的一种架构方式。必须掌握。
+
+​       何时会用的 flavor ? 
+ 一个产品，主体功能相同，但又存在差异。比如国内各个手机厂商众多。你的产品想使用各个厂商手机内置的钱包支付功能怎么办？
+把所以厂商sdk集成，然后根据厂商品牌做条件判断，好像也是一种办法。缺点就是用户只有一种支付方式，却要把所以厂商钱包都集成进去🙄。 解决这样类似的需求，该 flavor 出场了。
+
+  **[优秀原创]Android Gradle flavor —— 打造不同风味的app**  https://juejin.cn/post/7031399811173744648
+
  [android多渠道 依赖,android 不同渠道 添加不同依赖jar 使用不同代码](https://huaweicloud.csdn.net/64f988bb4cd6367bad133106.html?dp_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NTE3MjIwNywiZXhwIjoxNzExMzY2OTE1LCJpYXQiOjE3MTA3NjIxMTUsInVzZXJuYW1lIjoidnBzc2YifQ.i8wnNbXEpi1_K_nqwVUHjGNttndmvy5PicFAWpzBrsg)
+
+
 
 ### 基础组件
 
@@ -771,6 +820,8 @@ Room 持久性库在 SQLite 上提供了一个抽象层，以便在充分利用 
 
 #### 权限
 
+-  [hook Android 权限请求， 插入权限目的dialog显示。](https://juejin.cn/post/7087084927249809415) 
+
 #### 异常
 
 - [xCrash](https://github.com/iqiyi/xCrash/blob/master/README.zh-CN.md) xCrash 能为安卓 app 提供捕获 java 崩溃，native 崩溃和 ANR 的能力。不需要 root 权限或任何系统权限。
@@ -803,6 +854,10 @@ Room 持久性库在 SQLite 上提供了一个抽象层，以便在充分利用 
 
 ### 业务组件
 
+#### 推送
+
+​       Java服务端集成Google FCM推送的注意事项和实际经验  https://blog.csdn.net/qq_35683545/article/details/129100871
+
 #### 埋点
 
 #### 统计
@@ -823,14 +878,15 @@ Room 持久性库在 SQLite 上提供了一个抽象层，以便在充分利用 
 #### 支付
 
 - https://github.com/jenly1314/AppPay  AppPay专注于App支付的库，几句代码轻松搞定微信支付、支付宝支付、银联支付。集成更简单。
+-  https://juejin.cn/post/6844903936910950407  [Android]微信h5支付的正确打开方式
 
 #### 下载
 
 https://www.jianshu.com/p/3b269082cbbb  使用 Okhttp 下载文件和更新进度条
 
+#### 表单
 
-
-
+https://github.com/edhlily/blockview  Android动态格子布局（淘宝，京东等首页）
 
 
 
@@ -1032,6 +1088,10 @@ https://github.com/ljfxyj2008/ScalableTimebar ----->参考教程：可缩放时�
 
 
 
+#### Shadow
+
+-  Android进阶之路 - 背景阴影、阴影背景 https://juejin.cn/post/7256999484801187899
+
 #### 裁剪
 
 > 区域选择，区域裁剪，区域拖拉
@@ -1098,6 +1158,14 @@ https://github.com/ljfxyj2008/ScalableTimebar ----->参考教程：可缩放时�
 - [【Gradle-13】SNAPSHOT版本检查](https://juejin.cn/post/7292416512333840438)
 - [【Gradle-14】编译优化之Gradle最佳配置实践](https://juejin.cn/post/7344625554529730600)
 
+
+
+#### adb
+
+​    [解决'ADB' 不是内部或外部命令，也不是可运行的程序 或批处理文件](https://www.cnblogs.com/handsomefa9527/articles/13030403.html)
+
+
+
 ### 版本控制
 
 
@@ -1117,6 +1185,26 @@ https://github.com/ljfxyj2008/ScalableTimebar ----->参考教程：可缩放时�
  [‘D:\Program‘ 不是内部或外部命令，也不是可运行的程序 idea配置svn路径空格问题](https://blog.csdn.net/chedanquestion/article/details/119103761)
 
 ![image-20240307144318350](https://cdn.jsdelivr.net/gh/Arisono-h5/technical-resources-static@dev/imgs/202403071443463.png)
+
+
+
+### 打包发布
+
+#### jar/aar打包
+
+> 目前AGP8.0以上的时候，使用id 'maven-publish' 打包到JitPack存在问题。需要打包的情况下，先使用AGP8.0以下版本。
+
+  记录一次发布jitpack  https://blog.xxin.xyz/2024/01/29/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%8F%91%E5%B8%83jitpack/
+
+  android studio2022.3.1 ,gradle8 打包aar、sources.jar 遇到的问题   https://juejin.cn/post/7322305256171913256
+
+  android将library上传到JitPack图文教程  https://juejin.cn/post/7137694434682109988
+
+#### 更改包名
+
+   Android Studio修改项目名称和包名的步骤   https://blog.csdn.net/qq_34205684/article/details/114401402
+
+
 
 
 
@@ -1173,15 +1261,71 @@ https://github.com/kongzue/BaseOkHttpV3?tab=readme-ov-file#%E6%96%87%E4%BB%B6%E4
 ## 笔试面试
 
 - https://github.com/Shouheng88/Android-notes/tree/master    **[Android-notes](https://github.com/Shouheng88/Android-notes)**
+- https://github.com/chiclaim/AndroidAll 
 - https://github.com/Timdk857/Android-Architecture-knowledge-2-
 - https://github.com/BlackZhangJX/Android-Notes   Android开发核心知识点笔记（不断更新中🔥）
 -  https://github.com/AweiLoveAndroid/CommonDevKnowledge  ![:octocat:](https://github.githubassets.com/images/icons/emoji/octocat.png)🔥 🌟⭐⭐⭐ ⭐ 史上最全的BAT大厂Android面试题汇集，以及常用的Android开发的一些技能点，冷门知识点汇总，开发中遇到的坑汇总等干货。
 -  https://github.com/pengxurui/AndroidFamily   🔥【Android 面经 + Android 学习指南】一份帮助 Android 开发者知识积累与能力进阶的学习路线
 -  https://www.kancloud.cn/alex_wsc/android/1492055
 
+
+
+## 应用发布
+
+### 国内应用市场
+
+> 国内应用商店
+
+- 2024年App从备案到上架（国内各大应用市场）全过程  https://blog.csdn.net/u013700502/article/details/134657598
+-  [面向中国独立开发者的移动应用备案流程](https://fanthus.github.io/2023/11/10/%E9%9D%A2%E5%90%91%E4%B8%AD%E5%9B%BD%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%A4%87%E6%A1%88%E6%B5%81%E7%A8%8B/)
+
+
+
+### 国外应用市场
+
+> 应用签名
+
+- 签名获取错误（错误: java.io.IOException: Invalid keystore format）签名中没打印出MD5信息  https://blog.csdn.net/weixin_44669831/article/details/128416328
+- java8以后版本的keytool不再输出md5指纹信息  https://www.cnblogs.com/architectforest/p/17318174.html
+
+> 应用审核
+
+-  GooglePlay 新包提审十几天！依旧在审，问题在哪？ https://blog.csdn.net/Jrchbxt2013/article/details/139114439
+-  谷歌上架，为什么会触发填表单，可以避免吗？怎么填表单可以提高通过率？ https://blog.csdn.net/m0_72996522/article/details/138471461
+
+
+
+### 第三方库发布
+
  
 
+
+
+
+
 # 技术全栈领域
+
+## 后端笔记
+
+  [高并发| 小虾米之路](https://xiaoxiami.gitbook.io/xiami/gao-bing-fa)
+
+ [后端程序员面试问题集锦: README](https://fungkao.gitbook.io/)
+
+[系统架构 - litemall](https://linlinjava.gitbook.io/litemall/project)
+
+
+
+### 上云教程
+
+-  快速搭建个人博客 —— 保姆级教程  https://pdpeng.github.io/2022/01/19/setup-personal-blog/#%E5%BA%8F%E8%A8%80
+
+
+
+## 前端笔记
+
+[前端架构| fe-share](https://xiaobaiha.gitbook.io/fe-share/engineering/qian-duan-jia-gou)
+
+
 
 ## 底层技术
 
@@ -1210,3 +1354,6 @@ https://github.com/Naixes/notes/blob/master/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE
 > https://developers.weixin.qq.com/community/minihome/doc/000084c0dec2e8a3d2e06b3d36b400
 
 - https://github.com/AJLoveChina/wechat-pusher-player  微信小程序live-pusher/live-player 示例, 使用本地搭建的RTMP服务
+
+
+

@@ -1,5 +1,11 @@
 在Android开发中，事件分发机制是一块Android比较重要的知识体系，了解并熟悉整套的分发机制有助于更好的分析各种点击滑动失效问题，更好去扩展控件的事件功能和开发自定义控件，同时事件分发机制也是Android面试必问考点之一，如果你能把下面的一些事件分发图当场画出来肯定加分不少。废话不多说，总结一句:**事件分发机制很重要**。
 
+**参考往期教程**
+
+- [Android面试高频知识点(1) 图解Android事件分发机制](https://developer.aliyun.com/article/1575572?scm=20140722.S_community@@%E6%96%87%E7%AB%A0@@1575572._.ID_1575572-RL_Android%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E7%9F%A5%E8%AF%86%E7%82%B91%E5%9B%BE%E8%A7%A3Android%E4%BA%8B%E4%BB%B6%E5%88%86%E5%8F%91%E6%9C%BA%E5%88%B6-LOC_search~UND~community~UND~item-OR_ser-PAR1_2150456417288731615773427e1c57-V_3-P0_0&source=5176.29345612&userCode=gy5l4yp9)
+- [Android面试高频知识点(2) 详解Android消息处理机制(Handler)](https://developer.aliyun.com/article/1575599?source=5176.29345612&userCode=gy5l4yp)
+- [Android面试高频知识点(3) 详解Android View的绘制流程](https://developer.aliyun.com/article/1575649?source=5176.29345612&userCode=gy5l4yp)
+
 ### Android 事件分发流
 
 关于Android 事件分发机制网上的博文很多，但是很多都是写个Demo然后贴一下输出的Log或者拿源码分析，然后一堆的注释和说明，如果用心的去看肯定是收获不少但是确实很难把整个流程说清和记住。曾经也是拼命想记住整个流程，但是一段时间又忘了，最后觉得分析这种问题和事件流的走向，一张图来解释和说明会清晰很多，下面我根据画的一张事件分发流程图,说明的事件从用户点击之后，在不同函数不同返回值的情况的最终走向。

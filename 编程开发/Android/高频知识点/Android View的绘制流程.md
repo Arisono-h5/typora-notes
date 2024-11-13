@@ -8,9 +8,9 @@ View的绘制和事件处理是两个重要的主题，上一篇《图解 Androi
 
 **参考往期教程**
 
-- Android面试高频知识点(1) 图解Android事件分发机制
-- Android面试高频知识点(2) 详解Android消息处理机制(Handler)
-- Android面试高频知识点(3) 详解Android View的绘制流程
+- [Android面试高频知识点(1) 图解Android事件分发机制](https://developer.aliyun.com/article/1575572?scm=20140722.S_community@@%E6%96%87%E7%AB%A0@@1575572._.ID_1575572-RL_Android%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E7%9F%A5%E8%AF%86%E7%82%B91%E5%9B%BE%E8%A7%A3Android%E4%BA%8B%E4%BB%B6%E5%88%86%E5%8F%91%E6%9C%BA%E5%88%B6-LOC_search~UND~community~UND~item-OR_ser-PAR1_2150456417288731615773427e1c57-V_3-P0_0&source=5176.29345612&userCode=gy5l4yp9)
+- [Android面试高频知识点(2) 详解Android消息处理机制(Handler)](https://developer.aliyun.com/article/1575599?source=5176.29345612&userCode=gy5l4yp)
+- [Android面试高频知识点(3) 详解Android View的绘制流程](https://developer.aliyun.com/article/1575649?source=5176.29345612&userCode=gy5l4yp)
 
 
 

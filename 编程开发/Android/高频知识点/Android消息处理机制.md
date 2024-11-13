@@ -4,6 +4,14 @@ Android消息处理机制(Handler+Looper+Message+MessageQueue)
 
 Android 消息处理机制估计都被写烂了，但是依然还是要写一下，因为Android应用程序是通过消息来驱动的，Android某种意义上也可以说成是一个以消息驱动的系统，UI、事件、生命周期都和消息处理机制息息相关，并且消息处理机制在整个Android知识体系中也是尤其重要，在太多的源码分析的文章讲得比较繁琐，很多人对整个消息处理机制依然是懵懵懂懂，这篇文章通过一些问答的模式结合Android主线程（UI线程）的工作原理来讲解，源码注释很全，还有结合流程图，如果你对Android 消息处理机制还不是很理解，我相信只要你静下心来耐心的看，肯定会有不少的收获的。
 
+
+
+**参考往期教程**
+
+- [Android面试高频知识点(1) 图解Android事件分发机制](https://developer.aliyun.com/article/1575572?scm=20140722.S_community@@%E6%96%87%E7%AB%A0@@1575572._.ID_1575572-RL_Android%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E7%9F%A5%E8%AF%86%E7%82%B91%E5%9B%BE%E8%A7%A3Android%E4%BA%8B%E4%BB%B6%E5%88%86%E5%8F%91%E6%9C%BA%E5%88%B6-LOC_search~UND~community~UND~item-OR_ser-PAR1_2150456417288731615773427e1c57-V_3-P0_0&source=5176.29345612&userCode=gy5l4yp9)
+- [Android面试高频知识点(2) 详解Android消息处理机制(Handler)](https://developer.aliyun.com/article/1575599?source=5176.29345612&userCode=gy5l4yp)
+- [Android面试高频知识点(3) 详解Android View的绘制流程](https://developer.aliyun.com/article/1575649?source=5176.29345612&userCode=gy5l4yp)
+
 # 概述#
 
 ------
